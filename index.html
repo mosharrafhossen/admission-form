@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ভার্সিটি আবেদন ফর্ম</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="contact-container">
+        <h2>ভার্সিটি আবেদন ফর্ম</h2>
+        <form id="applicationForm">
+            <!-- নাম -->
+            <div class="form-group">
+                <label for="name">পূর্ণ নাম:</label>
+                <input type="text" id="name" placeholder="আপনার পুরো নাম লিখুন">
+            </div>
+
+            <!-- জন্মতারিখ -->
+            <div class="form-group">
+                <label for="dob">জন্ম তারিখ:</label>
+                <input type="date" id="dob">
+            </div>
+
+            <!-- ইমেইল -->
+            <div class="form-group">
+                <label for="email">ইমেইল:</label>
+                <input type="email" id="email" placeholder="আপনার ইমেইল লিখুন">
+            </div>
+
+            <!-- ফোন -->
+            <div class="form-group">
+                <label for="phone">ফোন নম্বর:</label>
+                <input type="tel" id="phone" placeholder="আপনার ফোন নম্বর লিখুন">
+            </div>
+
+            <!-- ঠিকানা -->
+            <div class="form-group">
+                <label for="address">ঠিকানা:</label>
+                <textarea id="address" rows="3" placeholder="আপনার স্থায়ী ঠিকানা লিখুন"></textarea>
+            </div>
+
+            <!-- শিক্ষাগত যোগ্যতা -->
+            <div class="form-group">
+                <label for="education">শিক্ষাগত যোগ্যতা:</label>
+                <select id="education">
+                    <option value="">-- নির্বাচন করুন --</option>
+                    <option value="ssc">এস.এস.সি</option>
+                    <option value="hsc">এইচ.এস.সি </option>
+                    <option value="bsc">স্নাতক (BSc)</option>
+                    <option value="msc">স্নাতকোত্তর (MSc)</option>
+                </select>
+            </div>
+
+            <!-- প্রফার্ড কোর্স -->
+            <div class="form-group">
+                <label for="course">পছন্দের কোর্স:</label>
+                <select id="course">
+                    <option value="">-- নির্বাচন করুন --</option>
+                    <option value="cse">কম্পিউটার বিজ্ঞান (CSE)</option>
+                    <option value="eee">ইলেকট্রিক্যাল ইঞ্জিনিয়ারিং (EEE)</option>
+                    <option value="bba">বিজনেস অ্যাডমিন (BBA)</option>
+                    <option value="law">আইন (Law)</option>
+                </select>
+            </div>
+
+            <!-- লিঙ্গ -->
+            <div class="form-group">
+                <label>লিঙ্গ:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male"> পুরুষ</label>
+                    <label><input type="radio" name="gender" value="female"> মহিলা</label>
+                    <label><input type="radio" name="gender" value="other"> অন্যান্য</label>
+                </div>
+            </div>
+
+            <!-- ফাইল আপলোড -->
+            <div class="form-group">
+                <label for="transcript">শিক্ষাগত সনদপত্র আপলোড:</label>
+                <input type="file" id="transcript">
+            </div>
+
+            <!-- বার্তা / মন্তব্য -->
+            <div class="form-group">
+                <label for="message">মন্তব্য / অতিরিক্ত তথ্য:</label>
+                <textarea id="message" rows="4" placeholder="যদি কিছু যোগ করতে চান"></textarea>
+            </div>
+
+            <button type="submit">আবেদন পাঠান</button>
+        </form>
+        <p id="status"></p>
+    </div>
+
+    <script src="JS/custom.js"></script>
+</body>
+</html>
